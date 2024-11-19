@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap"
+        rel="stylesheet">
+
+    <title>Elves</title>
+
+    <style>
+        body {
+            background-color: rgb(3, 3, 44);
+        }
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(50px);
+            /* Initially moves the text down */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+            /* Returns to its original position */
+        }
+
+        header img {
+            margin-top: 300px;
+            margin-left: 550px;
+            margin-bottom: 300px;
+        }
+
+        main h1 {
+            margin-left: 550px;
+            font-size: 40px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+        }
+
+        main p {
+            font-size: 30px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .topicos {
+            font-size: 30px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+            margin-left: 100px;
+            margin-right: 50px;
+        }
+
+        .familias {
+            display: flex;
+        }
+
+        .familias img {
+            float: left;
+            margin-left: 100px;
+        }
+
+        .familias p {
+            float: right;
+            margin-left: 50px;
+        }
+
+        .familias h1 {
+            margin-left: 550px;
+            font-size: 40px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+        }
+
+        footer {
+            height: 50px;
+        }
+
+        /* Mobile settings */
+
+        @media screen and (max-width: 480px) {
+
+            header img {
+                margin-top: 100px;
+                margin-left: 100px;
+                margin-bottom: 200px;
+                width: 200px;
+            }
+
+            main h1 {
+                margin-left: 100px;
+                font-size: 20px;
+                font-family: "Playfair Display", serif;
+                color: whitesmoke;
+            }
+
+            main p {
+                font-size: 16px;
+            }
+
+            main {
+                flex-direction: column;
+            }
+
+            .topicos {
+                font-size: 16px;
+            }
+
+            .familias {
+                flex-direction: column;
+            }
+
+            .familias img {
+                margin-left: 20px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="text-elfotrad.png" alt="elves">
+    </header>
+
+    <main>
+
+        <h1>Origins and History</h1>
+        <p>
+            Elves were created by Eru Ilúvatar, the creator of all things. They awoke by the shores of Lake Cuiviénen before the rise of the Sun and Moon, and their existence is deeply tied to the starlight, which has always fascinated them.
+        </p>
+        <p>
+            - They were the first to inhabit Middle-earth.
+        </p>
+
+        <p>
+            - Some traveled to Valinor, the land of the Valar, where they received knowledge and light from the trees Telperion and Laurelin.
+        </p>
+
+        <p>
+            - Others remained in Middle-earth, known as wild elves or avari.
+        </p>
+
+        <p>
+            The history of elves is filled with tragedy and heroism, especially with Fëanor's rebellion, the creation of the Silmarils, and the events leading to the great wars against Morgoth.
+        </p>
+
+        <h1>Elves' Characteristics</h1>
+
+        <p>
+            1- Immortality:
+        </p>
+
+        <p class="topicos">
+            - Elves are essentially immortal but can be killed in battle or by great sorrow.
+        </p>
+
+        <p class="topicos">
+            - They do not age like mortals, maintaining their eternal youth and beauty.
+        </p>
+
+        <p>
+            2- Physical and Mental Abilities:
+        </p>
+
+
+        <p class="topicos">
+            - They are agile, swift, and extremely skilled in combat and art.
+        </p>
+
+        <p class="topicos">
+            - They possess great wisdom, perfect memory, and mastery of music, poetry, and languages.
+        </p>
+
+        <p>
+            3- Connection with Nature:
+        </p>
+
+
+        <p class="topicos">
+            - Elves have a spiritual connection with forests, rivers, and mountains.
+        </p>
+
+        <p class="topicos">
+            - They can communicate with nature in ways that other races cannot.
+        </p>
+        <h1>
+            Main Elven Group
+        </h1>
+
+        <div class="familias">
+
+
+            <img src="noldor.jpg" alt="noldor elf">
+
+            <p>
+                Noldor:
+            </p>
+
+            <p>
+                - Known for their skill in forging and craftsmanship.
+            </p>
+
+            <p>
+                - Important members include Fëanor, Galadriel, and Elrond.
+            </p>
+
+            <p>
+                - They were heavily involved in the wars against Morgoth.
+            </p>
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

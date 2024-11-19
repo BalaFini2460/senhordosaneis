@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap"
+        rel="stylesheet">
+
+    <title>Hobbit</title>
+
+    <style>
+        body {
+            background-color: rgb(3, 44, 20);
+        }
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(50px);
+            /* Initially moves the text down */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+            /* Returns to its original position */
+        }
+
+        header img {
+            margin-top: 300px;
+            margin-left: 550px;
+            margin-bottom: 300px;
+        }
+
+        main h1 {
+            margin-left: 550px;
+            font-size: 40px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+        }
+
+        main p {
+            font-size: 30px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .topicos {
+            font-size: 30px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+            margin-left: 100px;
+            margin-right: 50px;
+        }
+
+        .familias {
+            display: flex;
+        }
+
+        .familias img {
+            float: left;
+            margin-left: 100px;
+        }
+
+        .familias p {
+            float: right;
+            margin-left: 50px;
+        }
+
+        footer {
+            height: 50px;
+        }
+
+        /* Mobile settings */
+
+        @media screen and (max-width: 480px) {
+
+            header img {
+                margin-top: 100px;
+                margin-left: 100px;
+                margin-bottom: 200px;
+                width: 200px;
+            }
+
+            main h1 {
+                margin-left: 100px;
+                font-size: 20px;
+                font-family: "Playfair Display", serif;
+                color: whitesmoke;
+            }
+
+            main p {
+                font-size: 16px;
+            }
+
+            main {
+                flex-direction: column;
+            }
+
+            .topicos {
+                font-size: 16px;
+            }
+
+            .familias {
+                flex-direction: column;
+            }
+
+            .familias img {
+                margin-left: 20px;
+            }
+
+            .familias h1 {
+                margin-left: 70px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="text-hobbits.png" alt="hobbits">
+    </header>
+
+    <main>
+
+        <h1>Origins and History</h1>
+        <p>Hobbits do not have a well-documented origin in Tolkien's universe, but it is known that they emerged at some point during the Third Age, likely descending from humans. They are a reserved race, rarely involving themselves in the larger world's events, and prefer to live in peace.
+        </p>
+        <p>
+            -The first mention of hobbits occurs when they migrated to the Shire in the year 1601 of the Third Age.
+        </p>
+
+        <p>
+            -Despite being small in number and influence, hobbits like Bilbo and Frodo played decisive roles in the War of the Ring.
+        </p>
+
+        <h1>Characteristics of Hobbits</h1>
+
+        <p>
+            1- Stature and Appearance:
+        </p>
+
+        <p class="topicos">
+            - Hobbits are about 1 meter tall.
+        </p>
+
+        <p class="topicos">
+            - They have hairy and sturdy feet, which makes wearing shoes unnecessary.
+        </p>
+
+        <p>
+            2- Personality and Culture:
+        </p>
+
+
+        <p class="topicos">
+            - They are peaceful, hospitable, and love to eat (they eat at least six meals a day if possible).
+        </p>
+
+        <p class="topicos">
+            - They value simplicity, comfort, and family life.
+        </p>
+
+
+        <p class="topicos">
+            - Hobbits avoid conflicts but show unexpected courage when faced with challenges.
+        </p>
+
+        <p>
+            3- Notable Abilities:
+        </p>
+
+
+        <p class="topicos">
+            - They are extremely stealthy, especially in natural environments.
+        </p>
+
+        <p class="topicos">
+            - They possess great resilience and determination, as seen in Frodo and Sam.
+        </p>
+
+        <h1>
+            Main Hobbit Group
+        </h1>
+
+        <div class="familias">
+
+
+            <p>
+                Harfoots:
+
+
+            </p>
+
+            <p>
+                - The most numerous lineage.
+            </p>
+
+            <p>
+                - They have darker skin and smaller feet.
+            </p>
+
+            <p>
+                - They prefer hilly areas and are the simplest of the hobbits.
+            </p>
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

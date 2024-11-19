@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* configurações para tela de computador */
+        * {
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: black;
+        }
+
+
+
+        header img {
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+
+        main {
+            width: 1200px;
+        }
+
+        main a {
+            font-size: 30px;
+            margin-top: 200px;
+            margin-left: 20px;
+            font-family: "Playfair Display", serif;
+            color: aliceblue;
+            position: absolute;
+            z-index: 2;
+            text-decoration: none; 
+        }
+
+        .cima {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .elfos {
+            width: 500px;
+            height: 250px;
+            margin-left: 30px;
+            position: relative;
+            display: inline-block;
+
+        }
+
+        .elfos img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.5s ease;
+        }
+
+        .elfos:hover img{
+            transform: scale(1.2);
+        }
+
+        .hobbit {
+            width: 500px;
+            height: 250px;
+            margin-left: 150px;
+            position: relative;
+            display: inline-block;
+
+        }
+
+        .hobbit img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            position: absolute;
+            transition: transform 0.5s ease;
+        }
+
+        .hobbit:hover img{
+            transform: scale(1.2);
+        }
+        .baixo {
+            display: flex;
+            margin-top: 50px;
+        }
+
+        .anoes {
+            width: 500px;
+            height: 250px;
+            margin-left: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .anoes img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            position: absolute;
+            transition: transform 0.5s ease;
+        }
+
+        .anoes:hover img{
+            transform: scale(1.2);
+        }
+
+        .maiar {
+            width: 500px;
+            height: 250px;
+            margin-left: 150px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .maiar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            position: absolute;
+            transition: transform 0.5s ease;
+        }
+
+        .maiar:hover img{
+            transform: scale(1.2);
+        }
+
+        footer p{
+            font-size: 30px;
+            color: white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 200px;
+        }
+ /* configurações para tela de celular */
+
+@media screen and (max-width: 480px) {
+       
+
+    header img {
+            width: 200px;
+        }
+    main a{
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+    .cima{
+        flex-direction: column;
+    }
+
+    .baixo{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .elfos {
+            width: 300px;
+            height: 250px;
+            margin-left: 50px;
+        }
+
+        .hobbit{
+            width: 300px;
+            height: 250px;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+
+        .anoes{
+            width: 300px;
+            height: 250px;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+
+        .maiar{
+            width: 300px;
+            height: 250px;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+
+        footer p{
+            font-size: 20px;
+            margin-left: 100px;
+        }
+}
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <img src="text-racas.png" alt="Gandalf">
+    </header>
+
+
+
+    <main>
+
+        <div class=" cima">
+            <div class="elfos">
+                <a href="elfos.html">Elfos</a>
+                <img src="elfos.jpg" alt="elfo">
+            </div>
+
+            <div class="hobbit">
+                <img src="hobbit.jpg" alt="hobbit">
+                <a href="hobbit.html">Hobbit</a>
+
+            </div>
+        </div>
+
+        <div class="baixo">
+            <div class="anoes">
+                <img src="anoes.jpg" alt="Anões">
+                <a href="anoes.html">Anões</a>
+
+            </div>
+
+            <div class="maiar">
+                <img src="maiar.jpg" alt="maiar">
+                <a href="maiar.html">Maiar</a>
+            </div>
+
+        </div>
+    </main>
+
+    
+    <footer>
+        <p>   <a href="tradracas.html">clique para traduzir em ingles</a></p>
+    </footer>
+</body>
+
+</html>

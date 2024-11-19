@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    /* Settings for computer screens */
+    * {
+        margin: 0 auto;
+    }
+
+    body {
+        background-color: #6B8E23;
+        background: linear-gradient(90deg, #6B8E23 0%, #6B8E23 60%, #556B2F 100%);
+    }
+
+    header {
+        width: 1500px;
+    }
+
+    header img {
+        width: 500px;
+        height: 90px;
+        margin-top: 60px;
+        margin-left: 100px;
+    }
+
+    main {
+        width: 1500px;
+    }
+
+    main {
+        display: flex;
+    }
+
+    .bilbo {
+        width: 300px;
+        height: 750px;
+        margin-left: 100px;
+        margin-right: 100px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid white;
+        margin-top: 50px;
+    }
+
+    .bilbo img {
+        width: 200px;
+        height: 350px;
+        float: right;
+        margin-top: 5px;
+    }
+
+    .bilbo-nome {
+        width: 295px;
+        height: 50px;
+        background-color: rgb(2, 32, 2);
+        color: whitesmoke;
+        border-radius: 15px 15px 0 0;
+        margin-top: 2px;
+        text-align: center;
+    }
+
+    .bilbo-nome h1 {
+        margin-top: 5px;
+    }
+
+    .bilbo p {
+        font-size: 15px;
+        color: white;
+    }
+
+    .info {
+        font-size: 20px;
+        color: white;
+    }
+
+    .caracteristicas {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+    }
+
+    .esquerdo p {
+        margin-top: 20px;
+    }
+
+    .direito p {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .texto {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .texto p {
+        color: azure;
+        font-size: 30px;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+
+    .texto h1 {
+        font-size: 50px;
+        color: whitesmoke;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    footer {
+        width: 1500px;
+        height: 50px;
+    }
+
+    /* Settings for mobile screens */
+
+    @media screen and (max-width: 480px) {
+
+
+        header {
+            width: 400px;
+        }
+
+        header img {
+            width: 250px;
+            height: 70px;
+            margin-left: 20px;
+        }
+
+        main {
+            width: 400px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .bilbo {
+            margin-top: 20px;
+        }
+
+
+        .texto p {
+            font-size: 18px;
+        }
+
+        .esquerdo p {
+            margin-top: 15px;
+        }
+
+        .direito p {
+            margin-top: 15px;
+        }
+
+        .texto h1 {
+            font-size: 25px;
+        }
+
+        footer {
+            width: 400px;
+            height: 50px;
+        }
+
+    }
+</style>
+
+<body>
+
+
+    <header>
+        <div>
+            <img src="text-bilbo.png" alt="Bilbo">
+        </div>
+
+    </header>
+
+    <main>
+        <div class="texto">
+
+            <h1> Story</h1>
+            <p>
+                Bilbo Baggins is a 50-year-old Hobbit from the Shire who leads a comfortable and unambitious life,
+                rarely venturing beyond his pantry or wine cellar. But his behavior is disrupted when Gandalf, the
+                wizard, and a company of 13 dwarves knock on his door and take him on an expedition despite calling him
+                a "thief" by Gandalf himself and 13 dwarves led by their king Thorin Oakenshield on a quest to reclaim
+                the Lonely Mountain and its treasure from the Dragon Smaug. The adventure took Bilbo and his companions
+                through the wilderness, to the elven refuge of Rivendell, through the Misty Mountains and Mirkwood
+                Forest, Lake-town in the middle of Long Lake, and eventually to the Mountain itself. Here, after the
+                dragon was slain and the Mountain reclaimed, the Battle of the Five Armies occurred.
+            </p>
+
+            <p>On his journey, Bilbo encountered other fantastic creatures, including Trolls, Elves, Giant Spiders,
+                monstrous beings called Stone Giants, a man named Beorn who can shapeshift into a bear, Goblins,
+                Eagles, Wargs, and a viscous, murderous creature called Gollum. Underground, near Gollum's lair, Bilbo
+                accidentally found a magical Ring of invisibility, which he used to escape Gollum.
+            </p>
+
+            <p>
+                At the end of the journey, Bilbo became wiser and more confident, having saved the day in many dire
+                situations. He rescued the dwarves from the giant spiders with the magic ring and a short Elven Sword
+                he acquired. He used the ring to hide in hostile environments, as well as his intelligence to free the
+                dwarves from the elves' prisons. He was able to converse with the cunning Smaug. When tensions arose
+                over ownership of the recovered treasure, he unsuccessfully tried to bring the opposing sides to
+                compromise, using a stolen relic as leverage. He had a tense relationship with Thorin, but the two
+                reconciled on Thorin's deathbed. At the end of the story, Bilbo returned to his home in the Shire only
+                to find that several of his relatives, believing him to be dead, were trying to claim his home and
+                belongings. In addition to becoming rich from his share of the dwarves' treasure, he found that he had
+                gained the respectability of experience and wisdom.
+            </p>
+        </div>
+
+        <div class="bilbo">
+            <div class="bilbo-nome">
+                <h1>Bilbo</h1>
+            </div>
+            <img src="bilbo_desenho.png" alt="Bilbo">
+
+            <h1 class="info">Biographical Information</h1>
+
+            <div class="caracteristicas">
+
+                <div class="esquerdo">
+
+                    <p>
+                        Titles
+                    </p>
+
+                    <p>
+                        Death
+                    </p>
+
+                    <p>
+                        Affiliation
+                    </p>
+
+                    <p>
+                        Culture
+                    </p>
+
+                    <p>
+                        Gender
+                    </p>
+
+                    <p>
+                        Race
+                    </p>
+
+                    <p>
+                        Hair
+                    </p>
+
+                    <p>
+                        Eyes
+                    </p>
+
+                </div>
+
+                <div class="direito">
+
+                    <p class="titulo">
+                        The Ring-bearer
+                    </p>
+
+                    <p>
+                        No canonical record
+                    </p>
+
+                    <p>
+                        Baggins House
+                    </p>
+
+                    <p>
+                        Hobbit of the Shire
+                    </p>
+
+                    <p>
+                        Male
+                    </p>
+
+                    <p>
+                        Hairy-footed Hobbits
+                    </p>
+
+                    <p>
+                        Curly brown
+                    </p>
+
+                    <p>
+                        Light brown
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    </script>
+</body>
+
+</html>

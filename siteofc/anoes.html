@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap"
+        rel="stylesheet">
+
+    <title>Hobbit</title>
+
+    <style>
+        body {
+            background-color: rgb(81, 20, 3);
+        }
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(50px);
+            /* Movimenta o texto para baixo inicialmente */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+            /* Volta para sua posição original */
+        }
+
+        header img {
+            margin-top: 300px;
+            margin-left: 550px;
+            margin-bottom: 300px;
+        }
+
+        main h1 {
+            margin-left: 550px;
+            font-size: 40px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+        }
+
+        main p {
+            font-size: 30px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .topicos {
+            font-size: 30px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+            margin-left: 100px;
+            margin-right: 50px;
+        }
+
+        .familias {
+            display: flex;
+        }
+
+        .familias img {
+            float: left;
+            margin-left: 100px;
+        }
+
+        .familias p {
+            float: right;
+            margin-left: 50px;
+        }
+
+        footer {
+            height: 50px;
+        }
+
+        /* configurações para tela de celular */
+
+        @media screen and (max-width: 480px) {
+
+
+            header img {
+                margin-top: 100px;
+                margin-left: 100px;
+                margin-bottom: 200px;
+                width: 200px;
+            }
+
+            main h1 {
+                margin-left: 100px;
+                font-size: 20px;
+                font-family: "Playfair Display", serif;
+                color: whitesmoke;
+            }
+
+            main p {
+                font-size: 16px;
+            }
+
+            main {
+                flex-direction: column;
+            }
+
+            .topicos {
+                font-size: 16px;
+            }
+
+            .familias {
+                flex-direction: column;
+            }
+
+            .familias img {
+                margin-left: 20px;
+            }
+
+            .familias h1 {
+                margin-left: 70px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="text-anoes.png" alt="elfos">
+    </header>
+
+    <main>
+
+        <h1>Origens e História</h1>
+        <p>Os anões foram criados por Aulë, um dos Valar, antes mesmo dos elfos e humanos. No entanto, sua criação foi
+            interrompida por Eru Ilúvatar, que decretou que eles só despertariam após os elfos, os Primogênitos.
+        </p>
+        <p>
+            -Os primeiros anões eram os Sete Pais dos Anões, dos quais descendem os sete clãs.
+        </p>
+
+        <p>
+            -Durante as eras, os anões se tornaram famosos por seus reinos subterrâneos, como Khazad-dûm (Moria) e Erebor (a Montanha Solitária).
+        </p>
+
+        <h1>Características dos Anões</h1>
+
+        <p>
+            1- Aparência e Físico:
+        </p>
+
+        <p class="topicos">
+            - Pequenos, mas robustos, geralmente medindo entre 1,20 e 1,50 metro de altura.
+        </p>
+
+        <p class="topicos">
+            - Homens possuem longas barbas, que são símbolo de orgulho e status.
+        </p>
+
+        <p>
+            2-Habilidades e Ofícios:
+        </p>
+
+
+        <p class="topicos">
+            -Mestres na mineração e forja de metais preciosos, como mithril.
+        </p>
+
+        <p class="topicos">
+            - Conhecidos por sua habilidade em criar armas, armaduras e joias de qualidade inigualável.
+
+        <p class="topicos">
+            - São guerreiros habilidosos, especialmente com machados.
+        </p>
+
+        <p>
+            3- Cultura e Personalidade:
+
+
+        <p class="topicos">
+            - Extremamente leais a seus clãs e famílias.
+        </p>
+
+        <p class="topicos">
+            - Valorizam riquezas, especialmente metais e pedras preciosas.
+        </p>
+
+        <h1>
+            Principai Clã do Anões
+        </h1>
+
+        <div class="familias">
+
+
+            <p>
+                Povo de Durin:
+
+
+            </p>
+
+            <p>
+                - Descendentes de Durin, o Imortal, o mais antigo e reverenciado dos Sete Pais.</p>
+
+            <p>
+                Habitaram Khazad-dûm (Moria) e Erebor.</p>
+
+            <p>
+                Gimli é um dos descendentes desse clã.</p>
+
+        </div>
+    </main>
+    <p>   <a href="tradanoes.html">clique para traduzir em ingles</a></p>
+    <footer>
+
+    </footer>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

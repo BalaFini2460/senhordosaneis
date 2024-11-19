@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    /* configurações para tela de computador */
+    * {
+        margin: 0 auto;
+    }
+
+    body {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        height: 100vh;
+        width: 100%;
+    }
+
+    header img {
+        width: 500px;
+        height: 95px;
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .carrossel {
+        position: relative;
+        overflow: hidden;
+        /* Oculta qualquer conteúdo que esteja fora da área visível do carrossel (as imagens que não estão na tela não são mostradas até serem trazidas pelo deslizamento). */
+        max-width: 700px;
+        height: 550px;
+        border-radius: 15px;
+    }
+
+    .conteiner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
+    }
+
+    img {
+        object-fit: cover;
+        width: 700px;
+        height: 600px;
+        border-radius: 15px;
+    }
+
+    img:hover {
+        opacity: 0.;
+    }
+
+    button {
+        position: absolute;
+        /*Faz com que os botões sejam posicionados de forma absoluta dentro do contêiner do carrossel. Isso permite que as setas sejam colocadas nas laterais do carrossel. */
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        /*Muda o cursor para uma mãozinha ao passar sobre as setas, indicando que é um elemento clicável.*/
+        z-index: 1;
+        /*Garante que os botões de navegação fiquem acima das imagens, permitindo que sejam sempre visíveis.*/
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+
+    main h1 {
+        font-size: 60px;
+        font-family: "Playfair Display", serif;
+        color: rgb(228, 169, 81);
+
+    }
+
+
+
+    /* configurações para tela de celular */
+
+    @media screen and (max-width: 480px) {
+
+        body{
+            height: 100%;
+            width: 100%;
+        }
+
+        header img {
+            width: 380px;
+            height: 75px;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        .menu {
+            margin-left: 300px;
+        }
+
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .carrossel {
+            width: 385px;
+            height: 500px;
+        }
+
+        img {
+            width: 385px;
+            height: 500px;
+        }
+
+
+        footer {
+            width: 100%;
+            height: 30px;
+            font-size: 16px;
+            color: white;
+            font-family: "Oleo Script Swash Caps", system-ui;
+        }
+
+    }
+</style>
+
+<body>
+
+
+    <header>
+        <img src="text-perso.png" alt="Personagens">
+    </header>
+
+
+
+    <main>
+        <div class="carrossel">
+            <div class="conteiner" id="img">
+                <a href="gandalf.html"> <img src="gandalf.jpg" alt="gandalf"></a>
+                <a href="sauron.html"> <img src="sauron.jpg" alt="Sauron"></a>
+                <a href="frodo.html"> <img src="frodo.jpg" alt="Frodo"></a>
+                <a href="bilbo.html"> <img src="bilbo.jpg" alt="Bilbo"></a>
+                <a href="gollum.html"> <img src="gollum.jpg" alt="Gollum"></a>
+                <a href="galadriel.html"> <img src="galadriel.jpg" alt="Galadriel"></a>
+                <a href="legolas.html"> <img src="legolas.jpg" alt="Legolas"></a>
+                <a href="elrond.html"> <img src="elrond.jpg" alt="Elrond"></a>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+
+
+    </main>
+   
+    <footer>
+
+    </footer>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

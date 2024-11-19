@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap"
+        rel="stylesheet">
+
+    <title>Dwarves</title>
+
+    <style>
+        body {
+            background-color: rgb(81, 20, 3);
+        }
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(50px);
+            /* Initially moves the text down */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+            /* Returns to its original position */
+        }
+
+        header img {
+            margin-top: 300px;
+            margin-left: 550px;
+            margin-bottom: 300px;
+        }
+
+        main h1 {
+            margin-left: 550px;
+            font-size: 40px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+        }
+
+        main p {
+            font-size: 30px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .topicos {
+            font-size: 30px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+            margin-left: 100px;
+            margin-right: 50px;
+        }
+
+        .familias {
+            display: flex;
+        }
+
+        .familias img {
+            float: left;
+            margin-left: 100px;
+        }
+
+        .familias p {
+            float: right;
+            margin-left: 50px;
+        }
+
+        footer {
+            height: 50px;
+        }
+
+        /* Mobile settings */
+
+        @media screen and (max-width: 480px) {
+
+            header img {
+                margin-top: 100px;
+                margin-left: 100px;
+                margin-bottom: 200px;
+                width: 200px;
+            }
+
+            main h1 {
+                margin-left: 100px;
+                font-size: 20px;
+                font-family: "Playfair Display", serif;
+                color: whitesmoke;
+            }
+
+            main p {
+                font-size: 16px;
+            }
+
+            main {
+                flex-direction: column;
+            }
+
+            .topicos {
+                font-size: 16px;
+            }
+
+            .familias {
+                flex-direction: column;
+            }
+
+            .familias img {
+                margin-left: 20px;
+            }
+
+            .familias h1 {
+                margin-left: 70px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="text-anoes.png" alt="dwarves">
+    </header>
+
+    <main>
+
+        <h1>Origins and History</h1>
+        <p>The dwarves were created by Aulë, one of the Valar, even before the elves and men. However, their creation was interrupted by Eru Ilúvatar, who decreed that they would only awaken after the elves, the Firstborn.
+        </p>
+        <p>
+            -The first dwarves were the Seven Fathers of the Dwarves, from whom the seven clans descend.
+        </p>
+
+        <p>
+            -Over the ages, dwarves became famous for their underground kingdoms, such as Khazad-dûm (Moria) and Erebor (the Lonely Mountain).
+        </p>
+
+        <h1>Characteristics of Dwarves</h1>
+
+        <p>
+            1- Appearance and Physique:
+        </p>
+
+        <p class="topicos">
+            - Small but robust, usually measuring between 1.2 and 1.5 meters tall.
+        </p>
+
+        <p class="topicos">
+            - Men have long beards, which are symbols of pride and status.
+        </p>
+
+        <p>
+            2- Skills and Crafts:
+        </p>
+
+
+        <p class="topicos">
+            - Masters of mining and forging precious metals, such as mithril.
+        </p>
+
+        <p class="topicos">
+            - Known for their ability to create weapons, armor, and jewelry of unmatched quality.
+        </p>
+
+        <p class="topicos">
+            - Skilled warriors, especially with axes.
+        </p>
+
+        <p>
+            3- Culture and Personality:
+
+
+        <p class="topicos">
+            - Extremely loyal to their clans and families.
+        </p>
+
+        <p class="topicos">
+            - They value wealth, especially metals and precious stones.
+        </p>
+
+        <h1>
+            Main Dwarven Clan
+        </h1>
+
+        <div class="familias">
+
+
+            <p>
+                Durin's Folk:
+            </p>
+
+            <p>
+                - Descendants of Durin the Deathless, the oldest and most revered of the Seven Fathers.
+            </p>
+
+            <p>
+                - They inhabited Khazad-dûm (Moria) and Erebor.
+            </p>
+
+            <p>
+                - Gimli is one of the descendants of this clan.
+            </p>
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

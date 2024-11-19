@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap"
+        rel="stylesheet">
+
+    <title>Elfos</title>
+
+    <style>
+        body {
+            background-color: rgb(3, 3, 44);
+        }
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(50px);
+            /* Movimenta o texto para baixo inicialmente */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+            /* Volta para sua posição original */
+        }
+
+        header img {
+            margin-top: 300px;
+            margin-left: 550px;
+            margin-bottom: 300px;
+        }
+
+        main h1 {
+            margin-left: 550px;
+            font-size: 40px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+        }
+
+        main p {
+            font-size: 30px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .topicos {
+            font-size: 30px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+            margin-left: 100px;
+            margin-right: 50px;
+        }
+
+        .familias{
+            display: flex;
+        }
+
+        .familias img{
+            float: left;
+            margin-left: 100px;
+        }
+
+        .familias p{
+            float: right;
+            margin-left: 50px;
+        }
+        
+        .familias h1{
+          
+            margin-left: 550px;
+            font-size: 40px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+        }
+
+        footer{
+            height: 50px;
+        }
+
+         /* configurações para tela de celular */
+
+@media screen and (max-width: 480px) {
+
+    
+    header img {
+            margin-top: 100px;
+            margin-left: 100px;
+            margin-bottom: 200px;
+            width: 200px;
+        }
+
+        main h1 {
+            margin-left: 100px;
+            font-size: 20px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+        }
+
+        main p{
+            font-size: 16px;
+        }
+
+    main{
+        flex-direction: column;
+    }
+
+    .topicos{
+        font-size: 16px;
+    }
+    .familias{
+           flex-direction: column;
+        }
+
+        .familias img{
+            margin-left: 20px;
+        }
+
+
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="text-elfo.png" alt="elfos">
+    </header>
+
+    <main>
+
+        <h1>Origens e História</h1>
+        <p>
+            Os elfos foram criados por Eru Ilúvatar, o criador de todas as coisas. Eles despertaram à beira do lago
+            Cuiviénen antes do surgimento do Sol e da Lua, e sua existência está intrinsecamente ligada às luzes das
+            estrelas, que sempre os fascinaram.
+        </p>
+        <p>
+            -Foram os primeiros a habitar a Terra-média.
+        </p>
+
+        <p>
+            -Alguns viajaram para Valinor, a terra dos Valar, onde receberam conhecimento e luz das árvores Telperion e
+            Laurelin.
+        </p>
+
+        <p>
+            -Outros permaneceram na Terra-média, sendo conhecidos como elfos selvagens ou avari.
+        </p>
+
+        <p>
+            A história dos elfos é repleta de tragédias e heroísmo, especialmente com a rebelião de Fëanor, a criação
+            das Silmarils, e os eventos que levaram às grandes guerras contra Morgoth.
+        </p>
+
+        <h1>Características dos Elfos</h1>
+
+        <p>
+            1- Imortalidade:
+        </p>
+
+        <p class="topicos">
+            - Os elfos são imortais em essência, mas podem ser mortos em batalha ou por grande tristeza.
+        </p>
+
+        <p class="topicos">
+            - Não envelhecem como os mortais, mantendo sua juventude e beleza eterna.
+        </p>
+
+        <p>
+            2- Habilidades Físicas e Mentais:
+        </p>
+
+
+        <p class="topicos">
+            - São ágeis, rápidos e extremamente habilidosos no combate e na arte.
+        </p>
+
+        <p class="topicos">
+            - Possuem grande sabedoria, memória perfeita e domínio sobre música, poesia e línguas.
+        </p>
+
+        <p>
+            3- Conexão com a Natureza:
+        </p>
+
+
+        <p class="topicos">
+            - Os elfos têm uma ligação espiritual com as florestas, rios e montanhas.
+        </p>
+
+        <p class="topicos">
+            - Eles conseguem se comunicar com a natureza de formas que outras raças não conseguem.
+        </p>
+<h1>
+                Principal Grupo de Elfo
+            </h1>
+        
+        <div class="familias">
+            
+
+            <img src="noldor.jpg" alt="elfo noldor">
+
+            <p>
+                Noldor: 
+               
+                
+            </p>
+
+            <p>
+                - Conhecidos por sua habilidade em forja e artesanato. </p>
+
+                <p >
+                    - Alguns membros importantes incluem Fëanor, Galadriel, e Elrond. </p>
+
+                    <p>
+                        Estiveram muito envolvidos nas guerras contra Morgoth.</p>
+
+        </div>
+    </main>
+    <p>   <a href="tradelfo.html">clique para traduzir em ingles</a></p>
+    <footer>
+
+    </footer>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

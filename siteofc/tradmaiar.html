@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap"
+        rel="stylesheet">
+
+    <title>Maiar</title>
+
+    <style>
+        body {
+            background-color: rgb(47, 47, 47);
+        }
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(50px);
+            /* Moves the text down initially */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+            /* Returns to its original position */
+        }
+
+        header img {
+            margin-top: 300px;
+            margin-left: 550px;
+            margin-bottom: 300px;
+        }
+
+        main h1 {
+            margin-left: 550px;
+            font-size: 40px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+        }
+
+        main p {
+            font-size: 30px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .topicos {
+            font-size: 30px;
+            font-family: "Playfair Display", serif;
+            color: whitesmoke;
+            margin-left: 100px;
+            margin-right: 50px;
+        }
+
+        .familias {
+            display: flex;
+        }
+
+        .familias img {
+            float: left;
+            margin-left: 100px;
+        }
+
+        .familias p {
+            float: right;
+            margin-left: 50px;
+        }
+
+        footer {
+            height: 50px;
+        }
+
+        /* Mobile settings */
+
+        @media screen and (max-width: 480px) {
+
+            header img {
+                margin-top: 100px;
+                margin-left: 100px;
+                margin-bottom: 200px;
+                width: 200px;
+            }
+
+            main h1 {
+                margin-left: 100px;
+                font-size: 20px;
+                font-family: "Playfair Display", serif;
+                color: whitesmoke;
+            }
+
+            main p {
+                font-size: 16px;
+            }
+
+            main {
+                flex-direction: column;
+            }
+
+            .topicos {
+                font-size: 16px;
+            }
+
+            .familias {
+                flex-direction: column;
+            }
+
+            .familias img {
+                margin-left: 20px;
+            }
+
+            .familias h1 {
+                margin-left: 70px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="text-maiar.png" alt="Maiar">
+    </header>
+
+    <main>
+
+        <h1>Origins and History</h1>
+        <p>The Maiar were created by Eru Ilúvatar, just like the Valar, before the creation of the world. They participated in the great music of Ilúvatar (Ainulindalë), which shaped the universe.
+        </p>
+        <p>
+            The Maiar belong to the order of the Ainur but are of lesser power than the Valar.
+        </p>
+
+        <p>
+            -When the Valar descended to Middle-earth to shape it, the Maiar accompanied them as helpers and servants.
+        </p>
+
+        <h1>Characteristics of the Maiar</h1>
+
+        <p>
+            1- Spiritual Nature:
+        </p>
+
+        <p class="topicos">
+            - They are immortal spirits that can take physical forms but are not bound to them.
+        </p>
+
+        <p class="topicos">
+            - Their appearance varies according to their purpose or will.
+        </p>
+
+        <p>
+            2- Skills and Powers:
+        </p>
+
+
+        <p class="topicos">
+            -The Maiar possess great knowledge and power but vary in strength depending on their role.
+        </p>
+
+        <p class="topicos">
+            -Some have specific abilities, such as control over natural elements or magical skills.
+        </p>
+
+
+        <p>
+            3- Loyalty:
+        </p>
+
+
+        <p class="topicos">
+            - The Maiar generally serve one of the Valar, acting as extensions of their powers and wills.
+        </p>
+
+        <p class="topicos">
+            - Those corrupted by Morgoth became evil, like Sauron.
+        </p>
+
+        <h1>
+            Main Group of Maiar
+        </h1>
+
+        <div class="familias">
+
+
+            <p>
+                Olórin (Gandalf):
+            </p>
+
+            <p>
+                - Maia of wisdom, serving Manwë and Varda. 
+            </p>
+
+            <p>
+                Sent to Middle-earth as one of the Istari (wizards) to help in the fight against Sauron.
+            </p>
+
+            <p>
+                Known for his wisdom, compassion, and ability to inspire courage.
+            </p>
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

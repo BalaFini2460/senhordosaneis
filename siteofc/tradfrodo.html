@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    /* Settings for computer screen */
+    * {
+        margin: 0 auto;
+    }
+
+    body {
+        background-color: #502507;
+        background: linear-gradient(90deg, #502507 0%, #7a3a0c 60%, #D2B48C 100%);
+    }
+
+    header {
+        width: 1500px;
+    }
+
+    header img {
+        width: 350px;
+        height: 90px;
+        margin-top: 60px;
+        margin-left: 100px;
+    }
+
+    main {
+        width: 1500px;
+    }
+
+    main {
+        display: flex;
+    }
+
+    .frodo {
+        width: 300px;
+        height: 700px;
+        margin-left: 100px;
+        margin-right: 100px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid white;
+        margin-top: 50px;
+    }
+
+    .frodo img {
+        width: 300px;
+        height: 300px;
+        float: right;
+    }
+
+    .frodo-nome {
+        width: 300px;
+        height: 50px;
+        background-color: rgb(56, 10, 10);
+        color: whitesmoke;
+        border-radius: 15px 15px 0 0;
+        text-align: center;
+    }
+
+    .frodo-nome h1 {
+        margin-top: 5px;
+    }
+
+    .frodo p {
+        font-size: 15px;
+        color: white;
+    }
+
+    .info {
+        font-size: 20px;
+        color: white;
+    }
+
+    .caracteristicas {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+    }
+
+    .esquerdo p {
+        margin-top: 20px;
+    }
+
+    .direito p {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .texto {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .texto p {
+        color: azure;
+        font-size: 30px;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+
+    .texto h1 {
+        font-size: 50px;
+        color: whitesmoke;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    footer {
+        width: 1500px;
+        height: 50px;
+    }
+
+    /* Settings for mobile screen */
+
+    @media screen and (max-width: 480px) {
+        body {
+            background-color: #502507;
+            background: linear-gradient(90deg, #502507, #7a3a0c 60%);
+        }
+
+        header {
+            width: 400px;
+        }
+
+        header img {
+            width: 300px;
+            height: 70px;
+            margin-left: 15px;
+        }
+
+        main {
+            width: 400px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .frodo {
+            height: 645px;
+            margin-top: 20px;
+        }
+
+        .texto p {
+            font-size: 18px;
+        }
+
+        .esquerdo p {
+            margin-top: 15px;
+        }
+
+        .direito p {
+            margin-top: 15px;
+        }
+
+        .texto h1 {
+            font-size: 25px;
+        }
+
+        footer {
+            width: 400px;
+            height: 50px;
+        }
+    }
+</style>
+
+<body>
+
+
+    <header>
+        <div>
+            <img src="text-frodo.png" alt="Frodo">
+        </div>
+
+    </header>
+
+    <main>
+        <div class="texto">
+            <p>
+                Frodo (born September 22, 2968 T.A.) was the son of Drogo Baggins and Primula Brandybuck. After his parents' death in a boating accident, Frodo went to live at Brandy Hall with his mother's relatives, the Brandybucks. He grew up under the care of his uncle Rorimac Brandybuck. It is said that Frodo was caught several times stealing mushrooms from Farmer Maggot, who, during the last incident, gave Frodo a thrashing and set his three dogs on him. Frodo had feared them ever since.
+            </p>
+
+            <h1> Master of Bag End </h1>
+
+            <p>"This is the Master-Ring, the One Ring to rule them all. This is the One Ring that Sauron lost many ages ago, with the great weakening of his power. He greatly desires it—but he must not get it."
+                — Gandalf and Frodo in The Fellowship of the Ring, "The Shadow of the Past"
+            </p>
+
+            <p>
+                Frodo was chosen as the Ring-bearer, tasked with destroying it in the Cracks of Doom. Accompanied by Gandalf, Aragorn, Legolas, Gimli, Boromir, and the other hobbits, Frodo faced dangers, including attacks from orcs, wolves, and the Balrog in Moria. After Gandalf's death, the Fellowship was divided. Frodo and Sam went on alone to Mordor.
+            </p>
+            <h1> Destruction of the Ring </h1>
+
+            <p>Upon reaching the Cracks of Doom, Frodo succumbed to the Ring's power and refused to destroy it, but Gollum accidentally completed the task by falling into the fire with the Ring. Frodo was rescued by Gandalf and the eagles.
+            </p>
+            <h1>Return to the Shire</h1>
+            <p>
+                Frodo and the hobbits returned to the Shire and led the resistance against Saruman, who had taken control of the region. Despite the victory, Frodo continued to suffer from the physical and emotional scars of his journey.
+            </p>
+        </div>
+
+        <div class="frodo">
+            <div class="frodo-nome">
+                <h1>Frodo</h1>
+            </div>
+            <img src="frodo_desenho.jpg" alt="Frodo">
+
+            <h1 class="info">Biographical Information</h1>
+
+            <div class="caracteristicas">
+
+                <div class="esquerdo">
+
+                    <p>
+                        Family
+                    </p>
+
+                    <p>
+                        Death
+                    </p>
+
+                    <p>
+                        Affiliation
+                    </p>
+
+                    <p>
+                        Culture
+                    </p>
+
+                    <p>
+                        Gender
+                    </p>
+
+                    <p>
+                        Race
+                    </p>
+
+                    <p>
+                        Hair
+                    </p>
+
+                    <p>
+                        Eyes
+                    </p>
+
+                </div>
+
+                <div class="direito">
+
+                    <p class="titulo">
+                        Baggins
+                    </p>
+
+                    <p>
+                        September 29, 3021 T.A.
+                    </p>
+
+                    <p>
+                        The Fellowship of the Ring
+                    </p>
+
+                    <p>
+                        Hobbit of the Shire
+                    </p>
+
+                    <p>
+                        Male
+                    </p>
+
+                    <p>
+                        Hobbit
+                    </p>
+
+                    <p>
+                        Brown
+                    </p>
+
+                    <p>
+                        Blue
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

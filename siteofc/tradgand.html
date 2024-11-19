@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    /* configurações para tela de computador */
+    * {
+        margin: 0 auto;
+    }
+
+    body {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 10%, rgb(51, 51, 51) 100%, rgba(126, 126, 126, 1) 70%);
+    }
+
+    header {
+        width: 1500px;
+    }
+
+    header img {
+        width: 350px;
+        height: 90px;
+        margin-top: 60px;
+        margin-left: 100px;
+    }
+
+    main {
+        width: 1500px;
+    }
+
+    main {
+        display: flex;
+    }
+
+    .gandalf {
+        width: 300px;
+        height: 660px;
+        margin-left: 100px;
+        margin-right: 100px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid white;
+        margin-top: 50px;
+    }
+
+    .gandalf img {
+        width: 250px;
+        height: 250px;
+        float: right;
+        margin-top: 5px;
+    }
+
+    .gandalf-nome {
+        width: 295px;
+        height: 50px;
+        background-color: black;
+        color: whitesmoke;
+        border-radius: 15px 15px 0 0;
+        margin-top: 2px;
+        text-align: center;
+    }
+
+    .gandalf-nome h1{
+        margin-top: 5px;
+    }
+
+    .gandalf p {
+        font-size: 15px;
+        color: white;
+    }
+
+    .info {
+        font-size: 20px;
+        color: white;
+    }
+
+    .caracteristicas {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+    }
+
+    .esquerdo p {
+        margin-top: 20px;
+    }
+
+    .direito p {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .texto {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .texto p {
+        color: azure;
+        font-size: 30px;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+
+    .texto h1 {
+        font-size: 50px;
+        color: whitesmoke;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    footer {
+        width: 1500px;
+        height: 50px;
+    }
+
+    /* configurações para tela de celular */
+
+@media screen and (max-width: 480px) {
+
+
+header{
+width: 400px;
+}
+
+header img{
+width: 250px;
+height: 70px;
+margin-left: 20px;
+}
+
+main{
+width: 400px;
+flex-direction: column;
+align-items: center;
+}
+
+
+.gandalf{
+height: 620px;
+margin-top: 20px;
+}
+
+
+.texto p{
+font-size:18px ;
+}
+.esquerdo p{
+    margin-top: 15px;
+}
+.direito p{
+    margin-top: 15px;
+}
+.texto h1{
+font-size: 25px;
+}
+
+footer{
+    width: 400px;
+    height: 50px;
+}
+
+}
+</style>
+
+<body>
+
+
+    <header>
+        <div>
+            <img src="text-gandalf.png" alt="Gandalf">
+        </div>
+
+    </header>
+
+    <main>
+        <div class="texto">
+            <p>
+                Gandalf (Gandalf in Tengwar), the Grey, later known as Gandalf the White, was a Maia created before the Music of the Ainur, who was sent to Middle-earth as one of the Istari, coming from Aman in the Third Age.
+            
+                He accompanied Thorin II Oakenshield on the quest to reclaim Erebor, was a member of the White Council, and led the Fellowship of the Ring during the War of the Ring.
+            </p>
+            
+            <h1> Youth </h1>
+            
+            <p>The wisest of the Maiar, Gandalf was created by Ilúvatar before the Music of the Ainur. At the beginning of Time, he was among the Ainur who entered Eä. In his youth, he was known as Olórin and lived in Lórien. He became one of the Maiar who served Manwë, Varda, Irmo, and Nienna. He was associated with light and fire, much like Varda.
+            
+                After the Valar discovered the primordial Elves in Cuiviénen, Olórin was sent there as one of the Five Guardians to protect the Elves from the forces of Melkor. It is unclear how long he stayed there or if he accompanied the Eldar on the Great Journey. But it is said that he loved the Elves, and during his youth, he walked invisibly among them or took on an elven appearance and sent them beautiful visions in their hearts that made them wiser. Throughout his existence, he followed the example of Nienna, having compassion for the sorrows of the Children of Ilúvatar and turning those who listened to him away from despair. </p>
+            </div>
+            
+            <div class="gandalf">
+                <div class="gandalf-name">
+                    <h1>Gandalf</h1>
+                </div>
+                <img src="gandalf_desenho.png" alt="Gandalf">
+            
+                <h1 class="info">Biographical Information</h1>
+            
+                <div class="characteristics">
+            
+                    <div class="left">
+            
+                        <p>
+                            Titles
+                        </p>
+            
+                        <p>
+                            Death
+                        </p>
+            
+                        <p>
+                            Affiliation
+                        </p>
+            
+                        <p>
+                            Culture
+                        </p>
+            
+                        <p>
+                            Gender
+                        </p>
+            
+                        <p>
+                            Race
+                        </p>
+            
+                        <p>
+                            Hair
+                        </p>
+            
+                        <p>
+                            Eyes
+                        </p>
+            
+                    </div>
+            
+                    <div class="right">
+            
+                        <p class="title">
+                            The White Rider
+                        </p>
+            
+                        <p>
+                            September 29, 3021 TA
+                        </p>
+            
+                        <p>
+                            The Fellowship of the Ring
+                        </p>
+            
+                        <p>
+                            Maiar (Order of Wizards)
+                        </p>
+            
+                        <p>
+                            Male
+                        </p>
+            
+                        <p>
+                            Ainur
+                        </p>
+            
+                        <p>
+                            White
+                            Grey beard
+                        </p>
+            
+                        <p>
+                            Black
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+    </main>
+
+    <footer>
+
+    </footer>
+
+    </script>
+</body>
+
+</html>
